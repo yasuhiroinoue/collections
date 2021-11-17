@@ -1,1 +1,1 @@
-Gems of code created in the development process. The collection contains unfinished code.
+Gems of code created in the code development process. The collection contains unfinished code.
