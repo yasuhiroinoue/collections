@@ -22,6 +22,10 @@ SIG // header <br>
 4 0 1 2 3//Components of a cell, "4" indicates the number of faces that composes the cell, subsequent digits indicates indices of the faces. <br>
 
 ## How to make and run ##
+mkdir output
+
+mkdir data
+
 make
 
 ./a.out start_step (usually "./a.out 0")
