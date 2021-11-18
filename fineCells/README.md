@@ -1,7 +1,8 @@
 Triangular mesh expression of cells.
 This code demonstates that two cells collide with each other.
 Swelling ratio of each cell is set to be 0.65.
-You can change parameter' values in _parameters.h
+You can change parameter' values in _parameters.h .
+
 "sig" file is original file format to describe the placement of cells.
 You see this is almost "off" file but the additional two final lines are different.
 
@@ -19,3 +20,8 @@ SIG // header <br>
 .<br>
 .<br>
 4 0 1 2 3//Components of a cell, "4" indicates the number of faces that composes the cell, subsequent digits indicates indices of the faces. <br>
+
+## How to make and run ##
+make
+
+./a.out start_step (usually "./a.out 0")
