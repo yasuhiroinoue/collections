@@ -1,3 +1,8 @@
+/*
+// For contact information
+// Yasuhiro Inoue
+// inoue.yasuhiro.4n@kyoto-u.ac.jp
+*/
 #include <iostream>
 #include <fstream>
 #include <cstdlib>

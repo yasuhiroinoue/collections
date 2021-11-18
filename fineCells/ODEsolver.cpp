@@ -1,4 +1,8 @@
-
+/*
+// For contact information
+// Yasuhiro Inoue
+// inoue.yasuhiro.4n@kyoto-u.ac.jp
+*/
 // 一階微分方程式のソルバ。1,2,4次精度及び4-5次の埋め込み型ルンゲクッタ。いずれも陽解法。
 
 #include <iostream>

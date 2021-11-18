@@ -1,3 +1,8 @@
+/*
+// For contact information
+// Yasuhiro Inoue
+// inoue.yasuhiro.4n@kyoto-u.ac.jp
+*/
 #ifndef _CLASS_VAR_H
 #define _CLASS_VAR_H
 
