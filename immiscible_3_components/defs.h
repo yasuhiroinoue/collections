@@ -1,8 +1,8 @@
+//rlg.cpp
 /*
 Yasuhiro Inoue
 inoue.yasuhiro.4n@kyoto-u.ac.jp
 */
-//rlg.cpp
 #ifndef DEFS_H
 #define DEFS_H
 
@@ -12,7 +12,7 @@ void Propagation(double& SX);
 void CellCalculation(void);
 void Collision(void);
 void RotationMatrix(void);
-//�Փˊ֐�
+//�Փˊ֐�
 void ColorCollision(void);
 void MultiColorCollision(void);
 void Scalling(void);

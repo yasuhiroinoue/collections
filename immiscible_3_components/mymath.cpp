@@ -1,12 +1,12 @@
+//mymath.cpp
 /*
 Yasuhiro Inoue
 inoue.yasuhiro.4n@kyoto-u.ac.jp
 */
-//mylib.cpp
 #include <math.h>
 #include "mymath.h"
 
-//ï¿½Qï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ÉŠÖ‚ï¿½ï¿½ï¿½ï¿½`
+//‚QŸŒ³s—ñ‚ÉŠÖ‚·‚é’è‹`
 //MATRIX matrix_new(int col, int row){
 //	MATRIX a = new double *[col];
 //	for( int i = 0; i < row; i++)
@@ -24,7 +24,7 @@ inoue.yasuhiro.4n@kyoto-u.ac.jp
 //	delete [] a;
 //}
 
-//ï¿½ï¿½ï¿½wï¿½Öï¿½
+//”ŠwŠÖ”
 /* ------------------------------------------------------------------ */
 /* ------------------------------------------------------------------ */
 /* ------------------------------------------------------------------ */

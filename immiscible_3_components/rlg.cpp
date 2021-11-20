@@ -1,8 +1,8 @@
+//rlg.cpp
 /*
 Yasuhiro Inoue
 inoue.yasuhiro.4n@kyoto-u.ac.jp
 */
-//rlg.cpp
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -71,18 +71,18 @@ void Read_Ptcl(){
 		list[x][y].lptr[2] = &list[xn][y];
 		list[x][y].lptr[3] = &list[x][yn];
 		//         1
-		//        ï¿½ï¿½
-		//   2 ï¿½ï¿½   ï¿½ï¿½ 0
-		//        ï¿½ï¿½
+		//        ¢¬
+		//   2 ¢«   ¢ª 0
+		//        ¢­
 		//         3
 		list[x][y].lptr[4] = &list[xp][yp];
 		list[x][y].lptr[5] = &list[xn][yp];
 		list[x][y].lptr[6] = &list[xn][yn];
 		list[x][y].lptr[7] = &list[xp][yn];
 		//       5 1  4
-		//       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		//   2 ï¿½ï¿½    ï¿½ï¿½ 0
-		//       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		//       ¡À¢¬¡¿
+		//   2 ¢«    ¢ª 0
+		//       ¡¿¢­¡À
 		//      6  3  7
 		
 		
@@ -132,18 +132,18 @@ void Initialize(void){
 		list[x][y].lptr[2] = &list[xn][y];
 		list[x][y].lptr[3] = &list[x][yn];
 		//         1
-		//        ï¿½ï¿½
-		//   2 ï¿½ï¿½   ï¿½ï¿½ 0
-		//        ï¿½ï¿½
+		//        ¢¬
+		//   2 ¢«   ¢ª 0
+		//        ¢­
 		//         3
 		list[x][y].lptr[4] = &list[xp][yp];
 		list[x][y].lptr[5] = &list[xn][yp];
 		list[x][y].lptr[6] = &list[xn][yn];
 		list[x][y].lptr[7] = &list[xp][yn];
 		//       5 1  4
-		//       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		//   2 ï¿½ï¿½    ï¿½ï¿½ 0
-		//       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		//       ¡À¢¬¡¿
+		//   2 ¢«    ¢ª 0
+		//       ¡¿¢­¡À
 		//      6  3  7
 		
 		
@@ -313,7 +313,7 @@ void MultiColorCollision(){
 		
 		//
 		if( (int)( cellp->mas ) != 0 ){
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½Oï¿½ï¿½ï¿½ï¿½
+		// ‚‘¬‰»—p‘Oˆ—
 		int count=0;
 		int TMCOL=0;
 		
@@ -443,9 +443,9 @@ void MultiColorCollision(){
 				for( pos = lst->pmap.lower_bound(col); pos != lst->pmap.upper_bound(col); ++pos){
 					flx +=  ( pos->second->vel - cellp->vel );
 					
-					//ï¿½Fï¿½ê‚©ï¿½ï¿½ó‚¯‚ï¿½Í‚ÍAï¿½Fï¿½Ì‚Ý‚ÅŒï¿½ï¿½è‚³ï¿½ï¿½ï¿½×‚ï¿½ï¿½B
-					//ï¿½ï¿½ï¿½Ê‚ÍAï¿½ï¿½ï¿½ï¿½ï¿½^ï¿½ï¿½ï¿½Ì•Ï‰ï¿½ï¿½Ì‚ï¿½ï¿½É‚ï¿½ï¿½ï¿½ï¿½È‚Ì‚ÅAï¿½Í‚ï¿½ï¿½ó‚¯‚ï¿½ï¿½ï¿½Ì‰^ï¿½ï¿½ï¿½ï¿½Ô‚ï¿½ï¿½ï¿½ï¿½è‚·ï¿½é‚±ï¿½Æ‚Í‚ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½
-					//ï¿½Fï¿½ï¿½ÆFï¿½ï¿½ï¿½qï¿½Ì‘ï¿½ï¿½Ýï¿½pï¿½Ì‘å‚«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß‚Ä‚Í‚È‚ï¿½È‚ï¿½ï¿½B
+					//Fê‚©‚çŽó‚¯‚é—Í‚ÍAF‚Ì‚Ý‚ÅŒˆ’è‚³‚ê‚é‚×‚«B
+					//Ž¿—Ê‚ÍAŠµ«‰^“®‚Ì•Ï‰»‚Ì‚µ‚É‚­‚³‚È‚Ì‚ÅA—Í‚ðŽó‚¯‚½Œã‚Ì‰^“®ó‘Ô‚ðŒˆ’è‚·‚é‚±‚Æ‚Í‚ ‚Á‚Ä‚à
+					//Fê‚ÆF—±Žq‚Ì‘ŠŒÝì—p‚Ì‘å‚«‚³‚ðŒˆ‚ß‚Ä‚Í‚È‚ç‚È‚¢B
 					//flx += qc * ( pos->second->vel - cellp->vel );
 					
 					
@@ -458,7 +458,7 @@ void MultiColorCollision(){
 		}
 
 		CFLD.clear();
-		//ï¿½ï¿½ï¿½ï¿½ï¿½Ë¾ï¿½ï¿½Í²ï¿½Å¾ï¿½ï¿½ï¿½Ù¤Î·×»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë¡£
+		//¤³¤³¤Ë¾×ÆÍ²óÅ¾³ÑÅÙ¤Î·×»»¤¬Æþ¤ë¡£
 		}
 		
 		double th;
@@ -646,10 +646,10 @@ void SystemMonitor(int step)
 	
 	
   fprintf(fptr, "%d %f %f %f %f\n",
-	  /* ï¿½ï¿½ï¿½ï¿½     */ step,
-	  /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   */ total.mas,
-	  /* Ê¿ï¿½Ñ²ï¿½ï¿½ï¿½ */ total.ene/(2.0*(double)(ptcl_size)),
-	  /* Ê¿ï¿½ï¿½Î®Â® */ total.mom.x, total.mom.y);
+	  /* »þ´Ö     */ step,
+	  /* Áí¼ÁÎÌ   */ total.mas,
+	  /* Ê¿¶Ñ²¹ÅÙ */ total.ene/(2.0*(double)(ptcl_size)),
+	  /* Ê¿¶ÑÎ®Â® */ total.mom.x, total.mom.y);
   fclose(fptr);
 
 }

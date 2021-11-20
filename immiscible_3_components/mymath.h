@@ -1,4 +1,4 @@
-//mylib.h
+//mymath.h
 /*
 Yasuhiro Inoue
 inoue.yasuhiro.4n@kyoto-u.ac.jp
@@ -6,12 +6,12 @@ inoue.yasuhiro.4n@kyoto-u.ac.jp
 #ifndef MYLIB_H 
 #define MYLIB_H 
 
-//ï¿½Qï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ÉŠÖ‚ï¿½ï¿½ï¿½ï¿½`
+//‚QŸŒ³s—ñ‚ÉŠÖ‚·‚é’è‹`
 //typedef double** MATRIX;
 //MATRIX matrix_new(int, int);
 //void matrix_delete(MATRIX);
 
-//ï¿½ï¿½ï¿½wï¿½Öï¿½
+//”ŠwŠÖ”
 static double HPI = 1.57079632679490;
 static double PI =  3.14159265358979;
 static double PI2 = 6.28318530717959;
@@ -20,7 +20,7 @@ static double PI2 = 6.28318530717959;
 #define SQR(x) (x * x)
 #define ABS(x) sqrt(SQR(x))
 
-/* ran2()ï¿½Æ“ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ran2()ï¿½Ì‚Qï¿½{ï¿½ï¿½ï¿½ï¿½ Mersenne Twister */
+/* ran2()‚Æ“¯“™‚Ì¸“x‚ğ‚à‚¿ran2()‚Ì‚Q”{‘‚¢ Mersenne Twister */
 /* http://www.math.keio.ac.jp/~matumoto/mt.html */
 /* A C-program for MT19937: Real number version([0,1)-interval) */
 /* (1999/10/28)                                                 */
