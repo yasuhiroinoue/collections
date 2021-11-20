@@ -1,4 +1,8 @@
 //rlg.h
+/*
+Yasuhiro Inoue
+inoue.yasuhiro.4n@kyoto-u.ac.jp
+*/
 #ifndef RLG_H
 #define RLG_H
 #include "rclass.h"

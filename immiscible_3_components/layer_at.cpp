@@ -1,3 +1,7 @@
+/*
+Yasuhiro Inoue
+inoue.yasuhiro.4n@kyoto-u.ac.jp
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

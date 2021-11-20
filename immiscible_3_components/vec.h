@@ -1,3 +1,7 @@
+/*
+Yasuhiro Inoue
+inoue.yasuhiro.4n@kyoto-u.ac.jp
+*/
 #ifndef VEC_H
 #define VEC_H
 #include <stdio.h>
@@ -8,13 +12,13 @@ class _vec{
   public:
 	TEMPLATE x;
 	TEMPLATE y;
-	//ƒƒ“ƒoŠÖ”
-	//ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	//ï¿½ï¿½ï¿½ï¿½ï¿½oï¿½Öï¿½
+	//ï¿½Rï¿½ï¿½ï¿½Xï¿½gï¿½ï¿½ï¿½Nï¿½^
 	_vec(void);
 	_vec(const TEMPLATE&, const TEMPLATE& );
 	_vec(const _vec<TEMPLATE>&);
 	
-	//ƒIƒyƒŒ[ƒ^
+	//ï¿½Iï¿½yï¿½ï¿½ï¿½[ï¿½^
 	void IN(const TEMPLATE& , const TEMPLATE& );
 	void IN(const _vec<TEMPLATE>&);
 	_vec<int> icast(void) const;
@@ -32,8 +36,8 @@ class _vec{
 
 
 
-//ƒƒ“ƒoŠÖ”À‘Ì
-//ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+//ï¿½ï¿½ï¿½ï¿½ï¿½oï¿½Öï¿½ï¿½ï¿½ï¿½ï¿½
+//ï¿½Rï¿½ï¿½ï¿½Xï¿½gï¿½ï¿½ï¿½Nï¿½^
 template <class TEMPLATE> inline _vec<TEMPLATE>::_vec(void){
 	x = 0;
 	y = 0;
@@ -49,7 +53,7 @@ template <class TEMPLATE> inline _vec<TEMPLATE>::_vec(const _vec<TEMPLATE>& v){
 	y = v.y;
 }
 
-//ƒIƒyƒŒ[ƒ^
+//ï¿½Iï¿½yï¿½ï¿½ï¿½[ï¿½^
 template <class TEMPLATE> inline void _vec<TEMPLATE>::IN(const TEMPLATE& a, const TEMPLATE& b){
 	x = a; y = b;
 }
@@ -98,7 +102,7 @@ template <class TEMPLATE> inline _vec<TEMPLATE>& _vec<TEMPLATE>::operator /= ( c
 	return *this;
 }
 
-//ƒXƒJƒ‰‘ÎƒxƒNƒgƒ‹
+//ï¿½Xï¿½Jï¿½ï¿½ï¿½Îƒxï¿½Nï¿½gï¿½ï¿½
 template <class TEMPLATE> inline _vec<TEMPLATE> operator*( const TEMPLATE& a, const _vec<TEMPLATE> v  ){
 	_vec<TEMPLATE> vec(a*v.x,a*v.y);
 	return vec;
@@ -141,7 +145,7 @@ template <class TEMPLATE> inline _vec<TEMPLATE> operator-(const TEMPLATE& a ,con
 	return vec;
 }
 
-//ƒxƒNƒgƒ‹‘ÎƒxƒNƒgƒ‹
+//ï¿½xï¿½Nï¿½gï¿½ï¿½ï¿½Îƒxï¿½Nï¿½gï¿½ï¿½
 template <class TEMPLATE> inline TEMPLATE operator*(const _vec<TEMPLATE>& v1, const _vec<TEMPLATE>& v2){
 	return v1.x * v2.x + v1.y * v2.y;
 }
@@ -161,7 +165,7 @@ template <class TEMPLATE> inline _vec<TEMPLATE> operator-(const _vec<TEMPLATE>& 
 
 
 
-//ƒxƒNƒgƒ‹‰ñ“]
+//ï¿½xï¿½Nï¿½gï¿½ï¿½ï¿½ï¿½]
 template <class TEMPLATE> inline _vec<TEMPLATE>& _vec<TEMPLATE>::rot( const TEMPLATE& angle )
 {
   TEMPLATE c=cos(angle), s=sin(angle);
@@ -173,7 +177,7 @@ template <class TEMPLATE> inline _vec<TEMPLATE>& _vec<TEMPLATE>::rot( const TEMP
   return *this;  
 }
 
-//ƒxƒNƒgƒ‹ƒmƒ‹ƒ€
+//ï¿½xï¿½Nï¿½gï¿½ï¿½ï¿½mï¿½ï¿½ï¿½ï¿½
 template <class TEMPLATE> inline TEMPLATE _vec<TEMPLATE>::norm(void) const{
 	TEMPLATE s = x*x + y*y;
 	return sqrt(s);

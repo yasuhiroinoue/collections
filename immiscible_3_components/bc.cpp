@@ -1,3 +1,7 @@
+/*
+Yasuhiro Inoue
+inoue.yasuhiro.4n@kyoto-u.ac.jp
+*/
 #include <iostream>
 #include <math.h>
 #include "mymath.h"

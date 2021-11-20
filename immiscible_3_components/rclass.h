@@ -1,3 +1,7 @@
+/*
+Yasuhiro Inoue
+inoue.yasuhiro.4n@kyoto-u.ac.jp
+*/
 #ifndef RCLASS_H
 #define RCLASS_H
 

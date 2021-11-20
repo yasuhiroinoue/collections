@@ -1,4 +1,8 @@
 //system.h
+/*
+Yasuhiro Inoue
+inoue.yasuhiro.4n@kyoto-u.ac.jp
+*/
 #ifndef SYSTEM_H
 #define SYSTEM_H
 
@@ -14,12 +18,12 @@
 #define		VX			0.0
 #define		VY			0.0
 #define		G			0.000000
-#define		SPCS		3/*í—Ş‚Ì” */
+#define		SPCS		3/*ï¿½ï¿½Ş‚Ìï¿½ */
 
-#define		A11			1.0/* —n¿©ŒÈ */
-#define		A33			1.0/* —n”}©ŒÈ */
-#define		A12			1.0 /* —n¿-—n¿  */
-#define		A13			1.0 /* —n¿-—n”} */
+#define		A11			1.0/* ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+#define		A33			1.0/* ï¿½nï¿½}ï¿½ï¿½ï¿½ï¿½ */
+#define		A12			1.0 /* ï¿½nï¿½ï¿½-ï¿½nï¿½ï¿½  */
+#define		A13			1.0 /* ï¿½nï¿½ï¿½-ï¿½nï¿½} */
 
 
 #define		DELTA	0.000010
@@ -27,8 +31,8 @@
 
 
 #define		WALL_COLOR  0.0
-#define		B1			0.0/* —n¿-•Ç */
-#define		B3			0.0/*—n”}-•Ç*/
+#define		B1			0.0/* ï¿½nï¿½ï¿½-ï¿½ï¿½ */
+#define		B3			0.0/*ï¿½nï¿½}-ï¿½ï¿½*/
 
 
 
