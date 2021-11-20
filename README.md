@@ -9,3 +9,6 @@ Liquid-Solid phase transition
 
 **immiscible_3_components**<br>
 Segregation to immisible three components (you can set more than three components in system.h)
+
+**LBM**<br>
+Lattice Boltzmann simulation of binary fluid by color method
